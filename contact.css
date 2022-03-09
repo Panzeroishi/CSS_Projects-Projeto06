@@ -1,0 +1,114 @@
+*{
+    padding:0;
+    margin:0;
+}
+body,html{
+    height: 100vh;
+    background-color:#9dbfaf;
+}
+.contato-rede {
+    background-color: #9dbfaf;
+    padding:10px;
+    border-radius:10px;
+    color: whitesmoke;
+    font-family: roboto-bold;
+}
+.contato-rede:hover{
+    color: black;
+}
+div.contatos{
+    height: 300px;
+    background-color:#edebc9;
+    max-width:300px;
+    min-width: 200px;
+    margin: auto;
+    margin-top:30px;
+    padding:10px;
+    border-radius:10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+.titulo{
+    background-color:#00ccbe;
+    text-align: center;
+    padding:10px;
+    margin-left:10px;
+    border-radius:10px;
+    font-family:roboto-bold;
+    color: #fcf9d8;}
+nav{
+    background-color:#edebc9;
+    width: auto;
+    height:15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+.menu li a{
+    margin-right: 10px;
+    font-family: roboto-bold;
+    background-color: #00ccbe ;
+    padding:10px;
+    border-radius:10px;
+    display: block;
+    color: #fcf9d8;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contatos img{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+@font-face {
+    font-family: 'roboto-bold';
+    src: url(Fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@media(min-width:300px) and (max-width:550px){
+    nav{
+        justify-content: center;
+        height: 30vh;   
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .menu li{
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+@media(mix-width:320px){
+    .contatos{
+        width: 100px;
+    }
+}
+@media(min-height:699px){
+    nav{
+        height: 30vh;
+    }
+}
+@Media(min-height:1000px){
+    nav{
+        height: 70px;
+    }
+}

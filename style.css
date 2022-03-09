@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+body,html{
+    height: 100vh;
+    background-color:#9dbfaf;
+}
+img{
+    width: 100%;
+}
+div.titulo{
+    background-color:  #00ccbe;
+    /* width: 250px; */
+    text-align: center;
+    padding:10px;
+    margin-left:10px;
+    border-radius:10px;
+    font-family:roboto-bold;
+    color: #fcf9d8;
+}
+nav{
+    display: flex;
+    height: 15vh;
+    background-color:#edebc9;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+ul{
+    list-style:none;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu li a{
+    font-family: roboto-bold;
+    background-color: #00ccbe ;
+    margin-right: 10px;
+    padding:10px;
+    border-radius:10px;
+    display: block;
+    color: #fcf9d8;
+}
+.menu li a:hover{
+    background-color:#9dbfaf;
+}
+
+a{
+    text-decoration:none;
+}
+.linha{
+    background-color: white;
+    height:5px;
+    width: 50vw;
+    margin: auto;
+    border-radius: 20px;
+}
+.projeto{
+    margin: auto;
+    background-color: #fcf9d8;
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: roboto-bold;
+}
+.container-grid{
+    
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    'item item item';
+    
+}
+.item{
+    height: 250px;
+    max-width: 300px;
+    min-width: 250px;
+    background-color: #09a6a3;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    grid-area:'item';
+    margin: auto;
+}
+.item img{
+    border-radius:10px;
+}
+.item h4{
+    background-color: #00ccbe;
+    margin-top: 10px;
+    padding:5px;
+    border-radius:10px;
+    font-family: roboto-bold;
+    color:#fcf9d8
+}
+.item a{
+    margin-top:5px;
+    background-color: #fcf9d8;
+    padding:5px;
+    color: black;
+    border-radius:10px;
+    font-family: roboto-bold;
+}
+.item a:hover{
+    background-color:#4e395d;
+    color:#fcf9d8
+}
+@font-face {
+    font-family: 'roboto-bold';
+    src: url(Fonts/Roboto/Roboto-Bold.ttf);
+}
+@media(max-width:830px){
+    .container-grid{
+        grid-template-areas: 
+        "item"
+        "item"
+        "item";
+    }
+    .item{
+        margin-top:10px;
+    }
+    nav{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+    }
+    .menu li{
+        margin: 10px;
+    }
+   
+}
+@media(min-width:320px) and (max-width:414px){
+    nav{
+        justify-content: center;
+        height: 20vh;
+    }
+}
+@media(min-height:1000px){
+    nav{
+        height: 10vh;
+    }
+}

@@ -127,28 +127,11 @@ a{
         "item"
         "item";
     }
-    .item{
-        margin-top:10px;
-    }
-    nav{
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        height: 20vh;
-    }
-    .menu li{
-        margin: 10px;
-    }
-   
+
 }
-@media(min-width:320px) and (max-width:414px){
+@media(max-width:600px){
     nav{
         justify-content: center;
         height: 20vh;
-    }
-}
-@media(min-height:1000px){
-    nav{
-        height: 10vh;
     }
 }

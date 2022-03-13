@@ -120,7 +120,7 @@ a{
     font-family: 'roboto-bold';
     src: url(Fonts/Roboto/Roboto-Bold.ttf);
 }
-@media(max-width:830px){
+@media(max-width:830px) and (min-width:500px){
     .container-grid{
         grid-template-areas: 
         "item"

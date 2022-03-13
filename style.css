@@ -127,11 +127,18 @@ a{
         "item"
         "item";
     }
+    .item{
+        margin-top: 5px;
+    }
 
 }
 @media(max-width:600px){
     nav{
         justify-content: center;
         height: 20vh;
+        flex-direction: column;
+    }
+    .menu{
+        margin-top: 3px;
     }
 }

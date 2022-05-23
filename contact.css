@@ -86,11 +86,11 @@ a{
 @media(min-width:300px) and (max-width:550px){
     nav{
         justify-content: center;
-        height: 30vh;   
+        height: 20vh;   
         flex-direction: column;
     }
     .menu{
-        flex-direction: column;
+        flex-direction: row
     }
     .menu li{
         margin-top: 5px;
